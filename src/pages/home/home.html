@@ -1,18 +1,57 @@
 <ion-header>
-  <ion-navbar>
-    <button ion-button menuToggle>
-      <ion-icon name="menu"></ion-icon>
-    </button>
-    <ion-title>Home</ion-title>
-  </ion-navbar>
+	<ion-navbar color="ochre" text-center>
+		<button ion-button menuToggle>
+			<ion-icon name="menu"></ion-icon>
+		</button>
+		<ion-title>Shopping App</ion-title>
+		<ion-searchbar
+			[showCancelButton]="shouldShowCancel"
+			[animated] = true
+		>
+		</ion-searchbar>
+		<ion-buttons end>
+			<button ion-button icon-only (click)="login($event)">
+				<ion-icon name="person-add"></ion-icon>
+			</button>
+			<button ion-button icon-only (click)="goToCart($event)">
+				<ion-icon name="cart"></ion-icon>
+			</button>
+		</ion-buttons>
+	</ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  <h3>Ionic Menu Starter</h3>
+	<!-- <h3>This is the home page</h3>   -->
 
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will show you the way.
-  </p>
+	<!-- <button ion-button secondary menuToggle>Toggle Menu</button> -->
 
-  <button ion-button secondary menuToggle>Toggle Menu</button>
+	<ion-slides (click)="slideClick()" #sliderOne>
+		<ion-slide>
+			<h1>Fruits</h1>
+			<img style="width: 100%; height: 100%" src="assets/imgs/fruits_slide_1.jpg">
+		</ion-slide>
+		<ion-slide>
+			<h1>Vegetables</h1>
+			<img style="width: 100%; height: 100%" src="assets/imgs/veg_slide_1.jpg">
+		</ion-slide>
+		<ion-slide>
+			<h1>Fish</h1>
+			<img style="width: 100%; height: 100%" src="assets/imgs/fish_slide_1.jpg">
+		</ion-slide>
+	</ion-slides>
+
+	<ion-slides #sliderTwo>
+		<ion-slide>
+			<h1>New Arrivals</h1>
+			<img style="width: 100%; height: 100%" src="assets/imgs/fruits_slide_2.jpg">
+		</ion-slide>
+		<ion-slide>
+			<h1>Hot topics</h1>
+			<img style="width: 100%; height: 100%" src="assets/imgs/veg_slide_2.jpg">
+		</ion-slide>
+		<ion-slide>
+			<h1>Trending</h1>
+			<img style="width: 100%; height: 100%" src="assets/imgs/fish_slide_2.jpg">
+		</ion-slide>
+	</ion-slides>
 </ion-content>

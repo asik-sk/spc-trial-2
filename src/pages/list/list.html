@@ -1,9 +1,9 @@
 <ion-header>
-  <ion-navbar>
+  <ion-navbar color="ochre">
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
-    <ion-title>List</ion-title>
+    <ion-title>Shop by Category</ion-title>
   </ion-navbar>
 </ion-header>
 
@@ -13,7 +13,7 @@
       <ion-icon [name]="item.icon" item-start></ion-icon>
       {{item.title}}
       <div class="item-note" item-end>
-        {{item.note}}
+        <ion-icon name="arrow-forward"></ion-icon>
       </div>
     </button>
   </ion-list>

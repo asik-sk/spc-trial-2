@@ -1,0 +1,79 @@
+{
+    "Category": [
+        {
+            "CategoryName": "Fruits",
+            "items": [
+                {
+                    "name": "Apple",
+                    "price": 500
+                },
+                {
+                    "name": "Mango",
+                    "price": 300
+                },
+                {
+                    "name": "Guava",
+                    "price": 200
+                },
+                {
+                    "name": "Banana",
+                    "price": 150
+                },
+                {
+                    "name": "Coconut",
+                    "price": 100
+                }
+            ]
+        },
+        {
+            "CategoryName": "Vegetables",
+            "items": [
+                {
+                "name": "Onion",
+                "price": 500
+                },
+                {
+                    "name": "Potato",
+                    "price": 300
+                },
+                {
+                    "name": "Capsicum",
+                    "price": 200
+                },
+                {
+                    "name": "Garlic",
+                    "price": 150
+                },
+                {
+                    "name": "Tomato",
+                    "price": 100
+                }
+            ]
+        },
+        {
+            "CategoryName": "Fish",
+            "items": [
+                {
+                    "name": "Katla",
+                    "price": 500
+                },
+                {
+                    "name": "Rui",
+                    "price": 300
+                },
+                {
+                    "name": "Ilish",
+                    "price": 200
+                },
+                {
+                    "name": "Prawn",
+                    "price": 150
+                },
+                {
+                    "name": "Pomfret",
+                    "price": 100
+                }
+            ]
+        }
+    ]
+}

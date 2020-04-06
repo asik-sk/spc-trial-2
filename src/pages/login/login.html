@@ -1,0 +1,40 @@
+<ion-header>
+
+	<ion-navbar>
+		<ion-title>login</ion-title>
+	</ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+	<ion-list>
+		<div class="top-page">
+			<h2  text-center>
+				<img src="assets/imgs/login.png" alt="">
+			</h2>
+			
+		</div>
+		<div class="middle-page">
+			<ion-row>
+				<ion-col>
+				<h3 text-right class="text-white">Sign in</h3>
+				</ion-col>
+			</ion-row>
+			
+		
+			<ion-item class="username">
+				<ion-input type="text" placeholder="Email"></ion-input>
+			</ion-item>
+			
+			<ion-item>
+				<ion-input type="password" placeholder="Password"></ion-input>
+			</ion-item>
+			
+			
+			
+			<button ion-button full (click)="login()"  color="primary">Sign In</button>  
+			<button ion-button clear class="text-white" style="float: right;margin-top:0">Register</button>
+		</div>		
+	</ion-list>
+</ion-content>
